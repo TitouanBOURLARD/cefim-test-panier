@@ -1,0 +1,349 @@
+* {
+    margin: 0;
+}
+
+@font-face {
+    font-family: Harry Potter;
+    src: url(../projet/fonts/HarryPotter-ov4z.ttf);
+}
+
+body {
+    background-color: #f8f5e8;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #4a2b10;
+}
+
+a.lienBlanc:visited {
+    text-decoration: none;
+    color: #f8f5e8;
+}
+
+/*  CSS DE L'ENTÊTE */
+
+#entete {
+    background-color: #4a2b10;
+    height: 50px;
+}
+
+#enteteMenu {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    color: #f8f5e8;
+    margin: 0 20px;
+    padding-left: 0;
+    padding-top: 15px;
+    font-size: large;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* CSS DU MENU */
+
+#menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    color: #4a2b10;
+    font-size: large;
+    font-weight: 300;
+    font-family: Harry Potter;
+    padding-left: 0;
+}
+
+#logoMenu {
+    height: 200px;
+    width: 200px;
+}
+
+.menuElement {
+    padding-top: 68px;
+    font-size: xx-large;
+}
+
+hr.top {
+    overflow: visible;
+    padding: 0;
+    border: none;
+    border-top: medium double #333;
+    color: #4a2b10;
+    text-align: center;
+    margin: 0 10%;
+    width: 80%;
+}
+hr.top:after {
+    content: "§";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    margin-left: 45px;
+    background: #f8f5e8;
+}
+
+/* CSS DU MAIN */
+
+main {
+    margin: 0 10%;
+    width: 80%;
+}
+
+h1 {
+    font-family: Harry Potter;
+    font-size: 3em;
+    font-weight: bold;
+    margin-top: 30px;
+    color: #4a2b10;
+    text-align: center;
+}
+
+h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: small;
+    text-align: center;
+    font-weight: 200;
+}
+
+#listeProduit {
+    width: 100%;
+}
+
+/* CSS HR LISTE PRODUITS */
+
+hr.mid {
+    overflow: visible;
+    height: 30px;
+    border-style: solid;
+    border-color: #4a2b10;
+    border-width: 1px 0 0 0;
+    border-radius: 20px;
+    margin-top: 5% ;
+    width: 50%;
+    margin-left: 25%;
+}
+hr.mid:before { 
+    display: block;
+    content: "";
+    height: 30px;
+    margin-top: -31px;
+    border-style: solid;
+    border-color: #4a2b10;
+    border-width: 0 0 1px 0;
+    border-radius: 20px;
+}
+
+/* CSS CARTE PRODUIT */
+
+.box-inner {
+    display: flex;
+}
+
+.productImg {
+    width: 10%;
+    height: 150px;
+    margin: 0 30%;
+}
+
+/* VERTICALE LINE */
+
+.vertical-line {
+    border-left: 1px solid #4a2b10;
+    display: inline-block;
+    margin-left:  -25%;
+    margin-right: -22%;
+    height: 200px;
+    color: #4a2b10;
+}
+
+.nameProduct {
+    display: inline-block;
+    color: #4a2b10;
+    font-family: 'Montserrat', sans-serif;
+    font-size: large;
+    vertical-align: top;
+    list-style-image: url('./assets/petitchapeau.png');
+    margin-left: 25%;
+}
+
+.total-price.green {
+    color: green;
+}
+  
+.total-price.orange {
+    color: orange;
+}
+  
+.total-price.red {
+    color: red;
+}
+
+.quantity {
+    color: #4a2b10;
+    font-family: 'Montserrat', sans-serif;
+    font-size: large;
+}
+
+.container {
+    margin-left: -170px;
+    display: inline-block;
+    color: #4a2b10;
+    margin-top: 150px;
+}
+
+button {
+    margin-right: 10px;
+}
+
+.btn-remove {
+    cursor: pointer;
+}
+
+.btn-add {
+    cursor: pointer;
+}
+  
+.counter {
+    font-size: 18px;
+    margin-right: 8px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn-delete {
+    font-size: 14px;
+    background-color: #ebe7d6;
+    border-radius: 5%;
+    color: #4a2b10;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.btn-delete:hover {
+    background-color: rgb(247, 72, 72);
+    color: #f8f5e8;
+    transition-duration: 0.5s;
+}
+
+hr.bot {
+    overflow: visible;
+    padding: 0;
+    border: none;
+    border-top: medium double #333;
+    color: #4a2b10;
+    text-align: center;
+    margin: 5% 10% 0 10%;
+    width: 80%;
+}
+hr.bot:after {
+    content: "§";
+    display: inline-block;
+    position: relative;
+    top: -0.95em;
+    font-size: 1.5em;
+    padding: 0.25em 0.25em;
+    background: #f8f5e8;
+}
+
+/* TOTAL ET BOUTON DE PAIEMENT */ 
+ 
+h4 {
+    text-align: center;
+    color: rgb(74, 43, 16);
+    font-family: Harry Potter;
+    font-size: x-large;
+    font-style: italic;
+    padding-top: 3%;
+}
+
+#clear-button {
+    margin-left: 46%;
+    margin-right: 46%;
+    width: 8%;
+    background-color: #4a2b10;
+    color: #f8f5e8;
+    border: none;
+    padding: 5px 5px;
+    border-radius: 5%;
+    cursor: pointer;
+}
+
+#clear-button:hover {
+    background-color: red;
+    transition-duration: 0.5s;
+}
+
+.btn {
+    background-color: #4a2b10;
+    color: #f8f5e8;
+    padding: 12px;
+    margin: 5% 25% 5% 25%;
+    border: none;
+    width: 50%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: bold;
+}
+  
+.btn:hover {
+    background: linear-gradient(to right, #45a049, rgb(101, 241, 120), #45a049);
+    transition-duration: 1s;
+    color: #4a2b10;
+}
+  
+
+
+/* CSS FOOTER */
+
+#footer {
+    width: 100%;
+    border-top: 10px solid #AA8855;
+}
+
+#backgroundFooter {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 50%;
+    z-index: -1;
+}
+
+#footerText {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    color: #f8f5e8;
+    font-family: 'Montserrat', sans-serif;
+    font-size: large;
+    font-weight: 300;
+    width: 80%;
+    margin: 5% 10% 5% 10%;
+    list-style-image: url('./assets/petitchapeaubeige.png');
+    gap: 10px;
+}
+
+#moyenDePaiement {
+    position: absolute;
+    width: 20%;
+    padding-left: 40%;
+    padding-top: 18%;
+}
+
+#copyright {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 18px;
+    text-align: center;
+    vertical-align: bottom;
+    width: 20%;
+    margin-left: 40%;
+    margin-top: 20%;
+    color: #f8f5e8;
+    opacity: 0.6;
+}
+

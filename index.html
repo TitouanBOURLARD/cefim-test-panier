@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <title>Voici ton panier !</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <link rel="fonts" href="../projet/fonts/HarryP-MVZ6w.ttf">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div id="entete">
+      <ul id="enteteMenu">
+        <li class="enteteElement">Monnaie : EUR</li>
+        <li class="enteteElement">Bienvenue sur le magasin The Quai !</li>
+        <li class="enteteElement"><a class="lienBlanc" id="deconnexion" href="#">Déconnexion</a></li>
+        <!-- <li class="enteteElement"><img id="logout" src="./assets/logout.png" alt="logo de déconnexion"></li> -->
+      </ul>
+    </div>
+    <div id="menuPanier">
+      <ul id="menu">
+        <li class="menuElement"><a href="#">Wishlist</a></li>
+        <li><a href="#"><img src="./assets/logo.png" alt="logo The Quai" id="logoMenu"></a></li>
+        <li class="menuElement" id="panier"><a href="#">Panier</a></li>
+      </ul>
+    </div>
+    <hr class="top" />
+  </header>
+  <main>
+    <h1>Votre panier</h1>
+    <h5>(Veuillez le vérifier avant confirmation d'achat.)</h3>
+    <hr class="mid" />
+    <section id="listeProduit">
+      <div class="box">
+        <div class="product">
+          <div class="box-inner">
+            <img class="productImg" src="./assets/pull.png" alt="">
+            <span class="vertical-line"></span>
+            <ul class="nameProduct">
+              <li>Sweat à capuche</li>
+              <li>Taille : M</li>
+              <li>Prix unitaire : <span class="price">39,00€</span></li>
+              <li>Sous-total : <span class="total-price">0€</span></li>
+            </ul>
+            <div class="container">
+              <span class="quantity">Quantité : </span>
+              <button class="btn-remove">-</button>
+              <span class="counter">0</span>
+              <button class="btn-add">+</button>
+              <button class="btn-delete">Supprimer</button>
+            </div>
+          </div>
+        </div>
+        <hr class="mid" />
+        <div class="product">
+          <div class="box-inner">
+            <img class="productImg" src="./assets/keyring.png" alt="">
+            <span class="vertical-line"></span>
+            <ul class="nameProduct">
+              <li>Porte-clé</li>
+              <li>Taille : Unique</li>
+              <li>Prix unitaire : <span class="price">9,00€</span></li>
+              <li>Sous-total : <span class="total-price">0€</span></li>
+            </ul>
+            <div class="container">
+              <span class="quantity">Quantité : </span>
+              <button class="btn-remove">-</button>
+              <span class="counter">0</span>
+              <button class="btn-add">+</button>
+              <button class="btn-delete">Supprimer</button>
+            </div>
+          </div>
+        </div>
+        <hr class="mid" />
+        <div class="product">
+          <div class="box-inner">
+            <img class="productImg" src="./assets/pen.png" alt="">
+            <span class="vertical-line"></span>
+            <ul class="nameProduct">
+              <li>Stylo</li>
+              <li>Couleur : Rouge</li>
+              <li>Prix unitaire : <span class="price">4,00€</span></li>
+              <li>Sous-total : <span class="total-price">0€</span></li>
+            </ul>
+            <div class="container">
+              <span class="quantity">Quantité : </span>
+              <button class="btn-remove">-</button>
+              <span class="counter">0</span>
+              <button class="btn-add">+</button>
+              <button class="btn-delete">Supprimer</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br />
+    <hr class="bot" />
+    <section id="checkout">
+      <button id="clear-button">Vider le panier</button>
+      <h4>Total du panier : <span id="prixTotal">0€</span> </h4>
+      <input type="submit" value="Procédez au paiement" class="btn">     
+    </section>
+  </main>
+  
+
+  <footer>
+    <div id="footer">
+      <div>
+        
+        <img src="./assets/footer.png" alt="backgroundFooter" id="backgroundFooter"/>
+      </div>
+      <div id="footerText">
+        <ul class="listeFooter">
+          <li>Contactez-nous</li>
+          <li>A propos de nous</li>
+          <li>FAQ</li>
+          <li>SAV & retours</li>
+        </ul>
+        <ul class="listeFooter">
+          <li>Collections</li>
+          <li>Vêtements</li>
+          <li>Goodies</li>
+          <li>Décorations</li>
+        </ul>
+        <ul class="listeFooter">
+          <li>Mentions légales</li>
+          <li>Conditions d'utilisations</li>
+          <li>Ethique et conformité</li>
+          <li>Garantie</li>
+          <li>Partenaires</li>
+        </ul>
+      </div>
+      <img src="./assets/paiement.png" alt="logoMoyenDePaiement" id="moyenDePaiement"/>
+      <p id="copyright">The Quai, univers de la saga Harry Potter, site non officiel, n'appartenant pas à © Warner Bros. Entertainment Inc. Tous droits réservés.</p>
+  </footer>
+</body>
+  <script src="index.js"></script>
+</html>
