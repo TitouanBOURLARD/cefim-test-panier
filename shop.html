@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <title>Magasin</title>
+  <link rel="stylesheet" type="text/css" href="shop.css">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <link rel="fonts" href="../projet/fonts/HarryP-MVZ6w.ttf">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="icon" href="./assets/petitchapeau.png" >
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+
+        <div id="entete">
+            <ul id="enteteMenu">
+              <li class="enteteElement">Mode jour/nuit : 1234</li>
+              <li class="enteteElement">Bienvenue sur le magasin The Quai !</li>
+              <li class="enteteElement"><a href="404.html">Déconnexion</a></li>
+            </ul>
+        </div>
+
+        <div id="menuPanier">
+
+        <ul id="menu">
+            <li class="menuElement"><a href="equipe.html" class="harryMode">Notre equipe</a></li>
+            <li><a href="shop.html"><img src="./assets/logo.png" alt="logo The Quai" id="logoMenu"></a></li>
+            <li class="menuElement" id="panierElement"><a href="index.html" class="harryMode">Panier</a></li>
+        </ul>
+        </div>
+
+      </header>
+  
+
+    <hr class="top" />
+
+    <ul id="separation">
+      <div id="overlay">
+        <h1>Repartez avec style</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate perferendis nesciunt numquam iure voluptas nam explicabo at debitis, magni dolorem architecto tempora, optio consectetur, vero commodi corrupti. Exercitationem, maxime? Aperiam!</p>
+      </div>
+      <li><img src="./images/shootingPhotos.png" alt="banniereSeparatrice" id="banniereSeparatrice"/></li>
+    </ul>
+
+    <hr/>
+
+    <h1 id="nosProduits" class="harryMode">Nos Produits</h1>
+
+
+    <div class="product-grid">
+
+        <div class="product-card">
+          <img src="./images/1.png" alt="Produit 1">
+          <hr/>
+          <h3>Hogwarts Express Sign Pin Badge</h3>
+          <p class="price">4.95€</p>
+          <button class="btn-buy" 
+          data-image="./images/1.png" 
+          data-prix="4.95€" 
+          data-description="Hogwarts Express Sign Pin Badge">
+          Ajouter au panier</button>
+        </div>
+
+        <div class="product-card">
+          <img src="./images/2.png" alt="Produit 1">
+          <hr/>
+          <h3>Hogwarts Express Ticket Keyring</h3>
+          <p class="price">4.95€</p>
+          <button class="btn-buy" 
+          data-image="./images/2.png" 
+          data-prix="4.95€" 
+          data-description="Hogwarts Express Ticket Keyring">
+          Ajouter au panier</button>
+        </div>
+
+        <div class="product-card">
+          <img src="./images/3.png" alt="Produit 1">
+          <hr/>
+          <h3>Faux Leather Platform 9 3/4 Notebook</h3>
+          <p class="price">15€</p>
+          <button class="btn-buy" 
+          data-image="./images/3.png" 
+          data-prix="15€" 
+          data-description="Faux Leather Platform 9 3/4 Notebook">
+          Ajouter au panier</button>
+        </div>
+
+        <div class="product-card">
+          <img src="./images/4.png" alt="Produit 1">
+          <hr/>
+          <h3>Danielle Nicole Hogwarts Express Crossbody Bag</h3>
+          <p class="price">65€</p>
+          <button class="btn-buy" 
+          data-image="./images/4.png" 
+          data-prix="65€" 
+          data-description="Danielle Nicole Hogwarts Express Crossbody Bag">
+          Ajouter au panier</button>
+        </div>
+
+        <div class="product-card">
+          <img src="./images/5.png" alt="Produit 1">
+          <hr/>
+          <h3>Platform 9 3/4 Medium Canvas Bag</h3>
+          <p class="price">26€</p>
+          <button class="btn-buy" 
+          data-image="./images/5.png" 
+          data-prix="26€" 
+          data-description="Platform 9 3/4 Medium Canvas Bag">
+          Ajouter au panier</button>
+        </div>
+
+        <div class="product-card">
+          <img src="./images/6.png" alt="Produit 1">
+          <hr/>
+          <h3>Bertie Bott's Every Flavour Beans - Platform 9 3/4</h3>
+          <p class="price">7.95€</p>
+          <button class="btn-buy" 
+          data-image="./images/6.png" 
+          data-prix="7.95€" 
+          data-description="Bertie Bott's Every Flavour Beans - Platform 9 3/4">
+          Ajouter au panier</button>
+        </div>
+
+        <div class="product-card">
+          <img src="./images/7.png" alt="Produit 1">
+          <hr/>
+          <h3>Hogwarts Express Souvenir Ticket</h3>
+          <p class="price">4.95€</p>
+          <button class="btn-buy" 
+          data-image="./images/7.png" 
+          data-prix="4.95€" 
+          data-description="Hogwarts Express Souvenir Ticket">
+          Ajouter au panier</button>
+        </div>
+
+        <div class="product-card">
+          <img src="./images/8.png" alt="Produit 1">
+          <hr/>
+          <h3>Platform 9 3/4 Rectangular Pillow</h3>
+          <p class="price">18.95€</p>
+          <button class="btn-buy" 
+          data-image="./images/8.png" 
+          data-prix="18.95€" 
+          data-description="Platform 9 3/4 Rectangular Pillow">
+          Ajouter au panier</button>
+        </div>
+
+        <div class="product-card">
+          <img src="./images/9.png" alt="Produit 1">
+          <hr/>
+          <h3>Platform 9 3/4 Zip Hoodie - Burgundy</h3>
+          <p class="price">25€</p>
+          <button class="btn-buy" 
+          data-image="./images/9.png" 
+          data-prix="25€" 
+          data-description="Platform 9 3/4 Zip Hoodie - Burgundy">
+          Ajouter au panier</button>
+        </div>
+
+        <div class="product-card">
+          <img src="./images/10.png" alt="Produit 1">
+          <hr/>
+          <h3>Platform 9 3/4 Mug & Spoon</h3>
+          <p class="price">8€</p>
+          <button class="btn-buy" 
+          data-image="./images/10.png" 
+          data-prix="8€" 
+          data-description="Platform 9 3/4 Mug & Spoon">
+          Ajouter au panier</button>
+        </div>
+
+        <div class="product-card">
+          <img src="./images/11.png" alt="Produit 1">
+          <hr/>
+          <h3>Platform 9 3/4 Latte Mug</h3>
+          <p class="price">14€</p>
+          <button class="btn-buy" 
+          data-image="./images/11.png" 
+          data-prix="14€" 
+          data-description="Platform 9 3/4 Latte Mug">
+          Ajouter au panier</button>
+        </div>
+
+        <div class="product-card">
+          <img src="./images/12.png" alt="Produit 1">
+          <hr/>
+          <h3>Platform 9 3/4 Pen</h3>
+          <p class="price">5.95€</p>
+          <button class="btn-buy" 
+          data-image="./images/12.png" 
+          data-prix="5.95€" 
+          data-description="Platform 9 3/4 Pen">
+          Ajouter au panier</button>
+        </div>
+
+        <div class="product-card">
+          <img src="./images/13.png" alt="Produit 1">
+          <hr/>
+          <h3>MinaLima Exclusive Platform 9 3/4 Print</h3>
+          <p class="price">139€</p>
+          <button class="btn-buy" 
+          data-image="./images/13.png" 
+          data-prix="139€" 
+          data-description="MinaLima Exclusive Platform 9 3/4 Print">
+          Ajouter au panier</button>
+        </div>
+
+        <div class="product-card">
+          <img src="./images/14.png" alt="Produit 1">
+          <hr/>
+          <h3>Spinning Platform 9 3/4 Keyring</h3>
+          <p class="price">7.95€</p>
+          <button class="btn-buy" 
+          data-image="./images/14.png" 
+          data-prix="7.95€" 
+          data-description="Spinning Platform 9 3/4 Keyring">
+          Ajouter au panier</button>
+        </div>
+
+        <div class="product-card">
+          <img src="./images/15.png" alt="Produit 1">
+          <hr/>
+          <h3>Platform 9 3/4 Pendant Necklace</h3>
+          <p class="price">6.95€</p>
+          <button class="btn-buy" 
+          data-image="./images/15.png" 
+          data-prix="6.95€"
+          data-description="Platform 9 3/4 Pendant Necklace">
+          Ajouter au panier</button>
+        </div>
+
+        <div class="product-card">
+          <img src="./images/16.png" alt="Produit 1">
+          <hr/>
+          <h3>Platform 9 3/4 Luggage Tag</h3>
+          <p class="price">7.95€</p>
+          <button class="btn-buy" 
+          data-image="./images/16.png" 
+          data-prix="7.95€" 
+          data-description="Platform 9 3/4 Luggage Tag">
+          Ajouter au panier</button>
+        </div>
+
+        <div class="product-card">
+          <img src="./images/17.png" alt="Produit 1">
+          <hr/>
+          <h3>Spinning Platform 9 3/4 Keyring</h3>
+          <p class="price">7.95€</p>
+          <button class="btn-buy" 
+          data-image="./images/17.png" 
+          data-prix="7.95€" data-description="Spinning Platform 9 3/4 Keyring">
+          Ajouter au panier</button>
+        </div>
+
+        <div class="product-card">
+          <img src="./images/18.png" alt="Produit 1">
+          <hr/>
+          <h3>Distressed Platform 9 3/4 T-Shirt</h3>
+          <p class="price">10€</p>
+          <button class="btn-buy" 
+          data-image="./images/18.png" 
+          data-prix="10€" 
+          data-description="Distressed Platform 9 3/4 T-Shirt">
+          Ajouter au panier</button>
+        </div>
+
+        <div class="product-card">
+          <img src="./images/19.png" alt="Produit 1">
+          <hr/>
+          <h3>Platform 9 3/4 Navy T-Shirt</h3>
+          <p class="price">10€</p>
+          <button class="btn-buy" 
+          data-image="./images/19.png" 
+          data-prix="10€" 
+          data-description="Platform 9 3/4 Navy T-Shirt">
+          Ajouter au panier</button>
+        </div>
+
+        <div class="product-card">
+          <img src="./images/20.png" alt="Produit 1">
+          <hr/>
+          <h3>Kids Hogwarts Express Allover Print T-Shirt</h3>
+          <p class="price">25€</p>
+          <button class="btn-buy" 
+          data-image="./images/20.png" 
+          data-prix="25€" 
+          data-description="Kids Hogwarts Express Allover Print T-Shirt">
+          Ajouter au panier</button>
+        </div>
+
+        <div class="product-card">
+          <img src="./images/21.png" alt="Produit 1">
+          <hr/>
+          <h3>MinaLima Platform 9 3/4 Print T-Shirt</h3>
+          <p class="price">25€</p>
+          <button class="btn-buy" 
+          data-image="./images/21.png" 
+          data-prix="25€" 
+          data-description="MinaLima Platform 9 3/4 Print T-Shirt">
+          Ajouter au panier</button>
+        </div>
+
+        <div class="product-card">
+          <img src="./images/22.png" alt="Produit 1">
+          <hr/>
+          <h3>Platform 9 3/4 Zip Hoodie - Burgundy</h3>
+          <p class="price">40€</p>
+          <button class="btn-buy" 
+          data-image="./images/22.png" 
+          data-prix="40€" 
+          data-description="Platform 9 3/4 Zip Hoodie - Burgundy">
+          Ajouter au panier</button>
+        </div>
+
+        <div class="product-card">
+          <img src="./images/23.png" alt="Produit 1">
+          <hr/>
+          <h3>Platform 9 3/4 Kids Zip Hoodie - Burgundy</h3>
+          <p class="price">25€</p>
+          <button class="btn-buy" 
+          data-image="./images/23.png" 
+          data-prix="25€" 
+          data-description="Platform 9 3/4 Kids Zip Hoodie - Burgundy">
+          Ajouter au panier</button>
+        </div>
+
+        <div class="product-card">
+          <img src="./images/24.png" alt="Produit 1">
+          <hr/>
+          <h3>Platform 9 3/4 Zip Hoodie - Navy</h3>
+          <p class="price">40€</p>
+          <button class="btn-buy" 
+          data-image="./images/24.png" 
+          data-prix="40€" 
+          data-description="Platform 9 3/4 Zip Hoodie - Navy">
+          Ajouter au panier</button>
+        </div>
+
+        <div class="product-card">
+          <img src="./images/25.png" alt="Produit 1">
+          <hr/>
+          <h3>Hogwarts Express Ornament</h3>
+          <p class="price">13.95€</p>
+          <button class="btn-buy" 
+          data-image="./images/25.png" 
+          data-prix="13.95€" 
+          data-description="Hogwarts Express Ornament">
+          Ajouter au panier</button>
+        </div>
+
+        <div class="product-card">
+          <img src="./images/26.png" alt="Produit 1">
+          <hr/>
+          <h3>Build Your Own Hogwarts Express</h3>
+          <p class="price">11.95€</p>
+          <button class="btn-buy" 
+          data-image="./images/26.png" 
+          data-prix="11.95€" 
+          data-description="Build Your Own Hogwarts Express">
+          Ajouter au panier</button>
+        </div>
+
+        <div class="product-card">
+          <img src="./images/27.png" alt="Produit 1">
+          <hr/>
+          <h3>LEGO Hogwarts Express</h3>
+          <p class="price">74.99€</p>
+          <button class="btn-buy" 
+          data-image="./images/27.png" 
+          data-prix="74.99€" 
+          data-description="LEGO Hogwarts Express">
+          Ajouter au panier</button>
+        </div>
+
+        <div class="product-card">
+          <img src="./images/28.png" alt="Produit 1">
+          <hr/>
+          <h3>Hogwarts Express Woven Throw</h3>
+          <p class="price">49.95€</p>
+          <button class="btn-buy" 
+          data-image="./images/28.png" 
+          data-prix="49.95€" 
+          data-description="Hogwarts Express Woven Throw">
+          Ajouter au panier</button>
+        </div>
+
+        <div class="product-card">
+          <img src="./images/29.png" alt="Produit 1">
+          <hr/>
+          <h3>Hogwarts Express Plush Cushion</h3>
+          <p class="price">29.99€</p>
+          <button class="btn-buy" 
+          data-image="./images/29.png" 
+          data-prix="29.99€" 
+          data-description="Hogwarts Express Plush Cushion">
+          Ajouter au panier</button>
+        </div>
+
+        <div class="product-card">
+          <img src="./images/30.png" alt="Produit 1">
+          <hr/>
+          <h3>Harry Potter Hogwarts Express</h3>
+          <p class="price">29.99€</p>
+          <button class="btn-buy" 
+          data-image="./images/30.png" 
+          data-prix="29.99€" 
+          data-description="Harry Potter Hogwarts Express">
+          Ajouter au panier</button>
+
+        </div>
+    </div>
+
+  
+
+  <footer>
+    <div id="footer">
+      <div>
+        
+        <img src="./assets/footer.png" alt="backgroundFooter" id="backgroundFooter"/>
+      </div>
+      <div id="footerText">
+        <ul class="listeFooter">
+          <li>Contactez-nous</li>
+          <li>A propos de nous</li>
+          <li>FAQ</li>
+          <li>SAV & retours</li>
+        </ul>
+        <ul class="listeFooter">
+          <li>Collections</li>
+          <li>Vêtements</li>
+          <li>Goodies</li>
+          <li>Décorations</li>
+        </ul>
+        <ul class="listeFooter">
+          <li>Mentions légales</li>
+          <li>Conditions d'utilisations</li>
+          <li>Ethique et conformité</li>
+          <li>Garantie</li>
+          <li>Partenaires</li>
+        </ul>
+      </div>
+      <img src="./assets/paiement.png" alt="logoMoyenDePaiement" id="moyenDePaiement"/>
+      <p id="copyright">The Quai, univers de la saga Harry Potter, site non officiel, n'appartenant pas à © Warner Bros. Entertainment Inc. Tous droits réservés.</p>
+  </footer>
+</body>
+  <script src="shop.js"></script>
+</html>

@@ -6,6 +6,7 @@
   <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
   <link rel="fonts" href="../projet/fonts/HarryP-MVZ6w.ttf">
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="icon" href="./assets/petitchapeau.png" >
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,21 +17,22 @@
   <header>
     <div id="entete">
       <ul id="enteteMenu">
-        <li class="enteteElement">Monnaie : EUR</li>
+        <li class="enteteElement">Mode jour/nuit : 1234</li>
         <li class="enteteElement">Bienvenue sur le magasin The Quai !</li>
-        <li class="enteteElement"><a class="lienBlanc" id="deconnexion" href="#">Déconnexion</a></li>
+        <li class="enteteElement"><a class="lienBlanc" id="deconnexion" href="./404.html">Déconnexion</a></li>
         <!-- <li class="enteteElement"><img id="logout" src="./assets/logout.png" alt="logo de déconnexion"></li> -->
       </ul>
     </div>
     <div id="menuPanier">
       <ul id="menu">
-        <li class="menuElement"><a href="#">Wishlist</a></li>
-        <li><a href="#"><img src="./assets/logo.png" alt="logo The Quai" id="logoMenu"></a></li>
-        <li class="menuElement" id="panier"><a href="#">Panier</a></li>
+        <li class="menuElement"><a href="shop.html">Magasin</a></li>
+        <li><a href="shop.html"><img src="./assets/logo.png" alt="logo The Quai" id="logoMenu"></a></li>
+        <li class="menuElement" id="panier"><a href="equipe.html">L'equipe</a></li>
       </ul>
     </div>
     <hr class="top" />
   </header>
+  
   <main>
     <h1>Votre panier</h1>
     <h5>(Veuillez le vérifier avant confirmation d'achat.)</h3>
@@ -103,7 +105,7 @@
     <section id="checkout">
       <button id="clear-button">Vider le panier</button>
       <h4>Total du panier : <span id="prixTotal">0€</span> </h4>
-      <input type="submit" value="Procédez au paiement" class="btn">     
+      <a href="./stripe.html"><input type="submit" value="Procédez au paiement" class="btn"> </a>    
     </section>
   </main>
   

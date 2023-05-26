@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+}
+
+@font-face {
+    font-family: Harry Potter;
+    src: url(../projet/fonts/HarryPotter-ov4z.ttf);
+}
+
+body {
+    background-color: #f8f5e8;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #4a2b10;
+}
+
+a.lienBlanc:visited {
+    text-decoration: none;
+    color: #f8f5e8;
+}
+
+/*  CSS DE L'ENTÊTE */
+
+#entete {
+    background-color: #4a2b10;
+    height: 50px;
+}
+
+#enteteMenu {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    color: #f8f5e8;
+    margin: 0 20px;
+    padding-left: 0;
+    padding-top: 15px;
+    font-size: large;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* CSS DU MENU */
+
+#menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    color: #4a2b10;
+    font-size: large;
+    font-weight: 300;
+    font-family: Harry Potter;
+    padding-left: 0;
+}
+
+#logoMenu {
+    height: 200px;
+    width: 200px;
+}
+
+.menuElement {
+    padding-top: 68px;
+    font-size: xx-large;
+}
+
+hr.top {
+    overflow: visible;
+    padding: 0;
+    border: none;
+    border-top: medium double #333;
+    color: #4a2b10;
+    text-align: center;
+    margin: 0 10%;
+    width: 80%;
+}
+hr.top:after {
+    content: "§";
+    display: inline-block;
+    position: relative;
+    top: 0em;
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    margin-left: 45px;
+}
+
+/* MAIN */
+
+#container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: -200px 10% 0 10%;
+}
+
+h1 {
+    font-family: Harry Potter;
+    font-size: 8em;
+    text-align: center;
+    margin: 5%;
+    color: #4a2b10;
+}
+
+.catImg {
+    width: 450px;
+    height: 450px;
+}
+
+#erreurP {
+    font-family: Harry Potter;
+    font-size: 10em;
+    font-weight: bold;
+    margin-top: 15%;
+    color: #4a2b10;
+}
+
+/* CSS FOOTER */
+
+#footer {
+    width: 100%;
+    border-top: 10px solid #AA8855;
+}
+
+#backgroundFooter {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 50%;
+    z-index: -1;
+}
+
+#footerText {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    color: #f8f5e8;
+    font-family: 'Montserrat', sans-serif;
+    font-size: large;
+    font-weight: 300;
+    width: 80%;
+    margin: 5% 10% 5% 10%;
+    list-style-image: url('./assets/petitchapeaubeige.png');
+    gap: 10px;
+}
+
+#moyenDePaiement {
+    position: absolute;
+    width: 20%;
+    padding-left: 40%;
+    padding-top: 18%;
+}
+
+#copyright {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 18px;
+    text-align: center;
+    vertical-align: bottom;
+    width: 20%;
+    margin-left: 40%;
+    margin-top: 20%;
+    color: #f8f5e8;
+    opacity: 0.6;
+}
+
+/* ------------------------------ */
+
+.scroll-to-top-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 30px;
+  height: 30px;
+  background-color: #f8f5e8;
+  color: #4a2b10;
+  border: 2px solid #4a2b10;
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.scroll-to-top-btn.show {
+  opacity: 1;
+}
+
+.scroll-to-top-btn::after {
+    content: "↑";
+    font-weight: 900;
+    font-size: 1em;
+}
