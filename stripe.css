@@ -3,9 +3,9 @@
 }
 
 @font-face {
-    font-family: Harry Potter;
-    src: url(../projet/fonts/HarryPotter-ov4z.ttf);
-}
+    font-family: 'HarryP-MVZ6w';  
+    src: url("./fonts/HarryP-MVZ6w.ttf");
+  }
 
 body {
     background-color: #f8f5e8;
